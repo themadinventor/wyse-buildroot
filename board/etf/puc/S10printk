@@ -1,0 +1,15 @@
+#!/bin/sh
+# Change kernel log level
+
+case "$1" in
+  start)
+	echo -n "Shutting up the kernel: "
+	echo 3 4 1 7 > /proc/sys/kernel/printk
+	echo "OK"
+	;;
+
+  *)
+	exit 0
+esac
+
+exit $?
