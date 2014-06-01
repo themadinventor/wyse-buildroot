@@ -2,5 +2,6 @@
 auto lo
 iface lo inet loopback
 
+# The good old ethernet jack
 auto eth0
-iface etho inet dhcp
+iface eth0 inet dhcp
